@@ -1,0 +1,5 @@
+{
+  "name": "MB GST Reconciliation Suite",
+  "description": "Automated GST ITC reconciliation tool for Magicbricks Home Loans with vendor communication and executive reporting.",
+  "requestFramePermissions": []
+}

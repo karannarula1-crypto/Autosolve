@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mb-red: #D8232A;
+  --color-mb-red-dark: #B71C1C;
+  --color-mb-gray: #303030;
+  --color-mb-light: #F5F5F5;
+  --color-mb-yellow: #FFBA00;
+}
+
+@layer base {
+  body {
+    @apply bg-[#F5F5F5] text-[#303030] font-sans antialiased;
+  }
+}
+
+@layer components {
+  .mb-card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-100 transition-all duration-300;
+  }
+  
+  .mb-button-primary {
+    @apply bg-mb-red text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-mb-red-dark transition-all active:scale-95 shadow-md hover:shadow-lg disabled:bg-gray-300 disabled:cursor-not-allowed;
+  }
+
+  .mb-button-secondary {
+    @apply border border-mb-red text-mb-red px-6 py-2.5 rounded-lg font-semibold hover:bg-red-50 transition-all active:scale-95;
+  }
+}
